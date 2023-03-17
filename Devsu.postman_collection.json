@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "9956f17e-dd3a-4191-8c9e-7f77b1f73b96",
+		"name": "Devsu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12458680"
+	},
+	"item": [
+		{
+			"name": "Clients",
+			"item": [
+				{
+					"name": "CreateClient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"password\": \"1234\",\r\n  \"identification\": \"0102\",\r\n    \"name\": \"Ale\",\r\n    \"gender\": \"Femenino\",\r\n    \"age\": 22,\r\n    \"address\": \"New Village\",\r\n    \"phone\": \"+502 12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7144/api/Clients",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7144",
+							"path": [
+								"api",
+								"Clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllClients",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7144/api/Clients",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7144",
+							"path": [
+								"api",
+								"Clients"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetClientById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7144/api/Clients/5",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7144",
+							"path": [
+								"api",
+								"Clients",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

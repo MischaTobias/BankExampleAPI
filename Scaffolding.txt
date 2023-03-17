@@ -1,0 +1,1 @@
+Scaffold-DbContext "server=127.0.0.1;userid=root;password=root;database=devsu" MySql.EntityFrameworkCore -ContextDir DevsuDbContext -OutputDir Models -f 
